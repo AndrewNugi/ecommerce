@@ -9,13 +9,14 @@ import store from './redux/features/store.js'
 
 //Auth
 import Login from './pages/auth/login.jsx'
-
+import Register from './pages/auth/register.jsx'
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
 
 
     </Route>
