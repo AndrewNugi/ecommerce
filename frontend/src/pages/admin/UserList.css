@@ -1,0 +1,103 @@
+/* Container styles */
+.h1-div {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .h1-style {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  /* Table styles */
+  .table {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 1rem;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thead-cell {
+    background-color: #f8f9fa;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+  }
+  
+  .table-cell {
+    padding: 0.75rem;
+    border-bottom: 1px solid #dee2e6;
+    vertical-align: middle;
+  }
+  
+  /* Edit mode styles */
+  .edit-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .edit-input {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    min-width: 200px;
+  }
+  
+  /* Button styles */
+  .update-btn {
+    color: #0d6efd;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    transition: color 0.2s;
+  }
+  
+  .update-btn:hover {
+    color: #0a58ca;
+  }
+  
+  .confirm-update-btn {
+    color: #198754;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    transition: color 0.2s;
+  }
+  
+  .confirm-update-btn:hover {
+    color: #146c43;
+  }
+  
+  .delete-btn {
+    color: #dc3545;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    transition: color 0.2s;
+  }
+  
+  .delete-btn:hover {
+    color: #bb2d3b;
+  }
+  
+  /* Flex utility */
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }

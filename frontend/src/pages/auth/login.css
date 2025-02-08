@@ -1,0 +1,103 @@
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container {
+    max-width: 72rem;
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    margin-bottom: 2rem;
+}
+
+.logo {
+    height: 10rem;
+    width: auto;
+    object-fit: contain;
+    border-radius: 0.7rem;
+}
+
+.form-section {
+    width: 100%;
+    max-width: 36rem;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.input-group {
+    margin: 2rem 0;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.form-input {
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.submit-button {
+    background-color: #ec4899;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #db2777;
+    cursor: pointer;
+}
+
+.submit-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.register-text {
+    margin-top: 1rem;
+    text-align: center;
+    color: #000;
+}
+
+.register-link {
+    color: #ec4899;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+    .logo {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}

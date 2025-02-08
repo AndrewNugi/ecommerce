@@ -1,0 +1,53 @@
+.container{
+    max-width: 1280px; /* equivalent to mx-auto */
+    padding: 1rem; /* equivalent to p-4 */
+    margin-top: 10rem; /* equivalent to mt-[10rem] */
+}
+.form-style{
+    display: flex; /* equivalent to flex */
+    justify-content: center; /* equivalent to justify-center */
+    align-items: center; /* equivalent to align-center */
+
+    @media (min-width: 768px) { /* equivalent to md: */
+        display: flex; /* equivalent to md:flex */
+        gap: 1rem; /* equivalent to md:space-x-4 */
+    }
+}
+.form-style-2{
+
+    @media (min-width: 768px) {
+        width: 33.3333%; /* equivalent to md:w-1/3 */
+    }
+}
+.h1-text{
+    font-size: 1.5rem; /* equivalent to text-2xl */
+    font-weight: 600; /* equivalent to font-semibold */
+    margin-bottom: 1rem; /* equivalent to mb-4 */
+}
+.label{
+    color: #4a4a4a; /* equivalent to text-gray */
+    margin-bottom: 0.5rem; /* equivalent to mb-2 */
+}
+.form-input{
+    padding: 1rem; /* equivalent to p-4 */
+    border-radius: 0.125rem; /* equivalent to rounded-sm */
+    width: 100%; /* equivalent to w-full */
+}
+.button-style{
+    background-color: #ec4899; /* equivalent to bg-pink-500 */
+    color: #ffffff; /* equivalent to text-white */
+    padding-top: 0.5rem; /* equivalent to py-2 */
+    padding-bottom: 0.5rem; /* equivalent to py-2 */
+    padding-left: 1rem; /* equivalent to px-4 */
+    padding-right: 1rem; /* equivalent to px-4 */
+    border-radius: 0.25rem; /* equivalent to rounded */
+    cursor: pointer; /* equivalent to cursor-pointer */
+}
+.button-style:hover {
+    background-color: #db2777; /* equivalent to hover:bg-pink-600 */
+}
+.button-spacing {
+    display: flex; /* equivalent to flex */
+    justify-content: space-between; /* equivalent to justify-between */
+}
+
