@@ -1,0 +1,42 @@
+.form-container{
+    padding: 1rem;
+}
+.form{
+    margin-bottom: 1rem;
+}
+.input-style{
+    padding: 0.75rem 1rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-top: 0.75rem;
+    cursor: pointer;
+}
+.btn-style{
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.btn-pink{
+    background-color: #ec4899;
+}
+.btn-pink:hover{
+    background-color: #db2777;
+}
+.btn-pink:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.5);  
+}
+.btn-red{
+    background-color: #f56565;
+}
+.btn-red:hover{
+    background-color: #e53e3e;
+}
+.btn-red:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(245, 101, 101, 0.5);
+}

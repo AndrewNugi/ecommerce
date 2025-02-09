@@ -1,0 +1,44 @@
+.main-container{
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        flex-direction: row;
+    }
+}
+.form-container{
+    width: 75%;
+    padding: 1rem;
+}
+.h1-style{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+}
+.category-button{
+    background-color: white;
+    border: 1px solid #ec4899;
+    color: #ec4899;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.75rem;
+    transition: background-color 0.3s, color 0.3s;
+    cursor:pointer
+}
+
+.category-button:hover {
+    background-color: #ec4899;
+    color: white;
+}
+
+.category-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.5);
+}
