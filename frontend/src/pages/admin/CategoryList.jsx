@@ -7,6 +7,7 @@ import { useCreateCategoryMutation,
 import CategoryForm from "../../components/CategoryForm"
 import Modal from '../../components/Modal'
 import './CategoryList.css'
+import AdminMenu from "./AdminMenu"
 
 const CategoryList = () => {
     const {data: categories } = useGetAllCategoriesQuery()
@@ -88,13 +89,11 @@ const CategoryList = () => {
 
   return (
     <div className="main-container">
-        {/*Admin Menu*/}
+        <AdminMenu />
+        <div className="h1-style">Manage Categories</div>
         <div className="form-container">
-            <div className="h1-style">Manage Categories</div>
             <CategoryForm value={name} setValue={setName} handleSubmit={handleCreateCategory} />
             <br />
-            <hr />
-
             <div className="categories">
                 {categories?.map((category) => (
                     <div key={category._id}>

@@ -8,6 +8,7 @@ import {
     useUpdateUserMutation, 
 } from "../../redux/api/usersApiSlice" 
 import Message from "../../components/Message"
+import AdminMenu from "./AdminMenu"
 import './UserList.css'
 
 const UserList = () => {
@@ -62,7 +63,10 @@ const UserList = () => {
     }
 
     return (
+        
         <div className="h1-div">
+            <AdminMenu />
+
             <h1 className="h1-style">Users</h1>
             {isLoading ? (
                 <Loader />

@@ -1,0 +1,52 @@
+/* Menu toggle button styles */
+.menu-toggle {
+    position: fixed;
+    background-color: rgb(229, 231, 235);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.menu-toggle-open {
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.menu-toggle-closed {
+    top: 1.25rem;
+    right: 1.75rem;
+}
+
+.hamburger-line {
+    width: 1.5rem;
+    height: 0.125rem;
+    background-color: rgb(209, 213, 219);
+    margin: 0.25rem 0;
+}
+
+/* Menu section styles */
+.menu-section {
+    background-color: rgb(229, 231, 235);
+    padding: 1rem;
+    position: fixed;
+    right: 1.75rem;
+    top: 1.25rem;
+}
+
+.menu-list {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+/* Navigation link styles */
+.menu-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.125rem;
+}
+
+.menu-link:hover {
+    background-color: rgb(229, 231, 235);
+}
+
+/* Active link styles are handled through NavLink's style prop in the JSX */

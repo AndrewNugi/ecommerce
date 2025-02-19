@@ -1,44 +1,192 @@
-.main-container{
-    margin-left: 10rem;
-    display: flex;
-    flex-direction: column;
+/* Container and Layout */
+.main-container {
+    margin: 0;
+    padding-left: 10rem;
+}
+
+@media (min-width: 1280px) {
+    .main-container {
+        margin-left: 9rem;
+    }
+}
+
+.form-container {
+    max-width: 100%;
+    width: auto;
+    padding: 1.5rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
-    .main-container {
-        flex-direction: row;
+    .form-container {
+        width: 75%;
     }
 }
-.form-container{
-    width: 75%;
-    padding: 1rem;
-}
-.h1-style{
-    font-size: 2rem;
+
+/* Header */
+.h1-style {
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
 }
-.categories{
-    display: flex;
-    flex-wrap: wrap;
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
 }
-.category-button{
-    background-color: white;
-    border: 1px solid #ec4899;
-    color: #ec4899;
-    padding: 0.5rem 1rem;
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
     border-radius: 0.5rem;
-    margin: 0.75rem;
-    transition: background-color 0.3s, color 0.3s;
-    cursor:pointer
+    background-color: white;
+    color: #1f2937;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #db2777;
+    box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.1);
+}
+
+/* Submit Button */
+.submit-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #db2777;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #be185d;
+}
+
+.submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.2);
+}
+
+/* Categories Display */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.category-button {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: white;
+    color: #db2777;
+    border: 1px solid #db2777;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
 }
 
 .category-button:hover {
-    background-color: #ec4899;
+    background-color: #db2777;
     color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(219, 39, 119, 0.2);
 }
 
 .category-button:focus {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.5);
+    box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.2);
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Delete Button */
+.delete-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.delete-button:hover {
+    background-color: #dc2626;
+}
+
+.delete-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .main-container {
+        margin: 0;
+        padding: 1rem;
+    }
+    
+    .categories {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .form-input,
+    .submit-button,
+    .category-button {
+        width: 100%;
+    }
+}
+
+/* Loading State */
+.loading {
+    color: #6b7280;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Error State */
+.error {
+    color: #ef4444;
+    text-align: center;
+    padding: 2rem;
+    background-color: #fef2f2;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
 }
