@@ -1,0 +1,27 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem;
+    margin-left: 11rem;
+}
+.h1-style{
+    margin-left: 5rem;
+    margin-top: 10rem;
+    font-size: 3rem;
+}
+.btn-style {
+    background-color: #ec4899; /* bg-pink-600 */
+    color: #ffffff; /* text-white */
+    font-weight: bold; /* font-bold */
+    border-radius: 9999px; /* rounded-full */
+    padding: 0.5rem 2.5rem; /* py-2 px-10 */
+    margin-right: 13.75rem; /* mr-[18rem] */
+    margin-top: 7.5rem; /* mt-[10rem] */
+}
+.product-style{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
